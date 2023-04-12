@@ -19,18 +19,10 @@ To get started with this boilerplate, follow these simple steps:
 1. Install the dependencies:
 
 ```bash
-npm install
-```
-
-```bash
 yarn
 ```
 
 2. Run tests:
-
-```bash
-npm run test
-```
 
 ```bash
 yarn test
