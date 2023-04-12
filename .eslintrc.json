@@ -21,6 +21,7 @@
     "plugins": ["react", "testing-library", "jest-dom", "@typescript-eslint", "prettier"],
     "rules": {
         "react/react-in-jsx-scope": "off",
-        "prettier/prettier": "error"
+        "prettier/prettier": "error",
+        "import/no-absolute-path": "off"
     }
 }

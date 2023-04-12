@@ -7,3 +7,4 @@ dist
 *.json
 index.js
 *.d.ts
+vite.config.ts
