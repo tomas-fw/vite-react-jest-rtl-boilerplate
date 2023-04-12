@@ -1,0 +1,9 @@
+node_modules
+.vscode
+coverage
+public
+dist
+*.scss
+*.json
+index.js
+*.d.ts
