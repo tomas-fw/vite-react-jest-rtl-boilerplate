@@ -3,8 +3,8 @@ import App from "../src/App";
 
 test("should page", () => {
   render(<App />);
-  const linkElement = screen.getByRole("heading", {
+  const headerElement = screen.getByRole("heading", {
     name: /vite \+ react/i,
   });
-  expect(linkElement).toBeInTheDocument();
+  expect(headerElement).toBeInTheDocument();
 });
