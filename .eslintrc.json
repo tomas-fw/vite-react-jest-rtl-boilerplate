@@ -5,6 +5,8 @@
     },
     "extends": [
         "eslint:recommended",
+        "plugin:testing-library/react",
+        "plugin:jest-dom/recommended",
         "plugin:react/recommended",
         "standard-with-typescript",
         "plugin:react-hooks/recommended",
@@ -16,7 +18,7 @@
         "sourceType": "module",
         "project": ["./tsconfig.json"]
     },
-    "plugins": ["react", "@typescript-eslint", "prettier"],
+    "plugins": ["react", "testing-library", "jest-dom", "@typescript-eslint", "prettier"],
     "rules": {
         "react/react-in-jsx-scope": "off",
         "prettier/prettier": "error"
