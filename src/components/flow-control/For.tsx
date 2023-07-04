@@ -1,4 +1,4 @@
-import { type JSXElementConstructor, useEffect, useState, type ReactElement } from 'react';
+import { useEffect, useState, type ReactElement } from 'react';
 
 interface Props<T> {
     // each: string;
@@ -6,7 +6,7 @@ interface Props<T> {
     children: (item: T, index: number) => ReactElement;
 }
 
-const For = <T,>({ of, children }: Props<T>): Array<ReactElement<any, string | JSXElementConstructor<any>>> | null => {
+const For = <T,>({ of, children }: Props<T>): ReactElement | null => {
     // Add a state to track if component is mounted on the client
     const [isMounted, setIsMounted] = useState(false);
 
@@ -19,7 +19,7 @@ const For = <T,>({ of, children }: Props<T>): Array<ReactElement<any, string | J
     if (!isMounted) {
         return null; // or return a loader
     }
-    return of.map(children);
+    return <>{of.map(children)} </>;
 };
 
 export default For;
