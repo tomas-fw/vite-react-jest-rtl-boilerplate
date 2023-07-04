@@ -9,7 +9,9 @@
         "format": "prettier --write --config .prettierrc.json \"src/**/*.+(js|tsx|ts)\"",
         "lint": "eslint --ext .js,.jsx,.ts,.tsx,.json ./src",
         "preview": "vite preview",
-        "test": "jest --watch"
+        "test": "jest --watch",
+        "ts-lint": "tsc --noEmit --incremental",
+        "ts-lint:watch": "tsc --noEmit --incremental --watch"
     },
     "jest": {
         "moduleNameMapper": {

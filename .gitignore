@@ -30,3 +30,6 @@ dist-ssr
 
 # eslint
 .eslintcache
+
+#typeScript
+*.tsbuildinfo
